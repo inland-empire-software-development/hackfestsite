@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    font-weight: 600;
+    color: #ec2242;;
+}
+
+a {
+    color: #ec2242;
+    transition: filter 0.15s ease-in;
+    font-weight: 600;
+    filter: saturate(70%);
+}
+
+a:hover {
+    color: #ec2242;
+    filter: saturate(100%);
+}
+
+.background-white {
+    background-color: #fff;
+}
+
+.background-black {
+    background-color: #000;
+}
+
+header {
+    background-image: url('./../../images/header-image.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header img:first-child {
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+}
+
+header img:nth-child(2) {
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 350px;
+}
+
+header img:nth-child(4){
+    margin: 0 auto;
+    display: block;
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+header p {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+header p span {
+    color: #ec2242;
+}
+
+section.grid-container.rules-agenda,
+section.grid-container.about,
+section.grid-container.faqs {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.about__content {
+    padding-left: 8px;
+}
+
+.rules-agenda ol,
+.rules-agenda ul {
+    padding-left: 24px;
+}
+
+.rules-agenda {
+    color: #181818;
+}
+
+.faqs__qa {
+    padding-left: 8px;
+}
+
+@media screen and (max-width: 800px){
+    header img {
+        max-width: 280px;
+    }
+}
+@media screen and (min-width: 800px) {
+    header {
+        height: 50vh;
+    }
+    .rules-agenda ol,
+    .rules-agenda ul {
+        padding-left: 80px;
+    }
+
+    .faqs__qa {
+        padding-left: 40px;
+    }
+
+    .text-light {
+        font-size: 20px;
+    }
+}
+
+.accordion {
+    border: none;
+    background-color: #fff;
+    color: #181818;
+}
+.accordion-section.is-active > .accordion-title,
+.accordion-title:hover{
+    background: #ec2242;
+    color: #fff;
+}
+
+.accordion-title {
+    border: none;
+    background-color: #fff;
+    color: #181818;
+    font-size: 20px;
+    border-bottom: 5px solid #000;
+    padding: 15px 10px;
+}
+
+.accordion p {
+    color: #333;
+    margin: 0;
+    padding: 25px;
+}
+
+span.accordion-icon {
+    font-weight: 100;
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+}
