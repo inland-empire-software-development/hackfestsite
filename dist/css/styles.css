@@ -82,8 +82,8 @@ section.grid-container.faqs {
     padding-bottom: 75px;
 }
 
-.about__content {
-    padding-left: 8px;
+.about--content {
+    width: 70%
 }
 
 .rules-agenda ol,
@@ -108,6 +108,7 @@ section.grid-container.faqs {
 @media screen and (min-width: 800px) {
     header {
         height: 50vh;
+        padding-bottom: 75px;
     }
 
     .rules-agenda ol,
