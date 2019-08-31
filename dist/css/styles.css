@@ -7,6 +7,7 @@ html, body {
 }
 
 h1 {
+    filter: drop-shadow(0px 0px 2px #ec2242);
     font-weight: 600;
     color: #ec2242;;
 }
@@ -20,7 +21,7 @@ a {
 
 a:hover {
     color: #ec2242;
-    filter: saturate(100%);
+    filter: drop-shadow(0px 0px 2px #ec2242);
 }
 
 .background-white {
@@ -55,11 +56,12 @@ header img:nth-child(2) {
     max-width: 350px;
 }
 
-header img:nth-child(4){
+header img:nth-child(4) {
     margin: 0 auto;
     display: block;
     max-width: 80px;
     margin-bottom: 15px;
+    filter: drop-shadow(0px 0px 1px #ec2242);
 }
 
 header p {
@@ -97,15 +99,17 @@ section.grid-container.faqs {
     padding-left: 8px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     header img {
         max-width: 280px;
     }
 }
+
 @media screen and (min-width: 800px) {
     header {
         height: 50vh;
     }
+
     .rules-agenda ol,
     .rules-agenda ul {
         padding-left: 80px;
@@ -122,11 +126,23 @@ section.grid-container.faqs {
 
 .accordion {
     border: none;
-    background-color: #fff;
+    background-color: transparent;
     color: #181818;
 }
+
+.accordion-content {
+    background: rgba(255,255,255,0.9);
+    border-bottom: 5px solid #000;
+}
+
+.accordion-section {
+    width: 100%;
+    display: inline-grid;
+}
+
 .accordion-section.is-active > .accordion-title,
-.accordion-title:hover{
+.accordion-title:hover {
+    filter: drop-shadow(0px 0px 2px #ec2242);
     background: #ec2242;
     color: #fff;
 }
@@ -151,4 +167,17 @@ span.accordion-icon {
     font-size: 14px;
     position: relative;
     top: -5px;
+}
+
+.accordion-section.is-active .accordion-icon .svg-icon {
+    transition: transform 0.25s ease-in;
+}
+
+.accordion-icon .svg-icon {
+    -webkit-transform: rotate(-450deg);
+    -moz-transform: rotate(-450deg);
+    -ms-transform: rotate(-450deg);
+    -o-transform: rotate(-450deg);
+    transform: rotate(-450deg);
+    transition: transform 0.25s ease-in;
 }
