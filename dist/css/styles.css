@@ -109,6 +109,7 @@ header p span {
 }
 
 section.grid-container.rules-agenda,
+section.grid-container.sponsors,
 section.grid-container.about,
 section.grid-container.faqs {
     padding-top: 75px;
@@ -138,6 +139,38 @@ section.grid-container.faqs {
     margin: 0;
 }
 
+.footer-logo {
+    max-width: 200px;
+}
+
+footer div.column-6:not(:first-of-type) {
+    padding: 0;
+}
+
+footer iframe {
+    border: none;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    max-width: 300px;
+}
+
+.sponsors p {
+    text-align: center;
+    color: #181818;
+    font-size: 16px;
+}
+
+.sponsor-gallery .logos {
+    display: inline-block;
+    width: 24%;
+}
+
+.logos img {
+    max-height: 80px;
+    display: block;
+    margin: 20px auto;
+}
+
 @media screen and (max-width: 800px) {
     header {
         height: 60vh;
@@ -150,8 +183,18 @@ section.grid-container.faqs {
     header img:nth-child(2) {
         max-width: 300px;
     }
+
+    .sponsor-gallery .logos {
+        width: 32%;
+    }
 }
 
+@media screen and (max-width: 500px) {
+
+    .sponsor-gallery .logos {
+        width: 48%;
+    }
+}
 @media screen and (max-width: 800px) {
     header {
         height: 60vh;
