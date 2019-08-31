@@ -197,7 +197,7 @@ footer iframe {
 }
 @media screen and (max-width: 800px) {
     header {
-        height: 60vh;
+        height: 40vh;
     }
 
     header p {
@@ -225,8 +225,7 @@ footer iframe {
 }
 @media screen and (min-width: 800px) {
     header {
-        height: 60vh;
-        padding-bottom: 75px;
+        height: 45vh;
     }
 
     .rules-agenda ol,
