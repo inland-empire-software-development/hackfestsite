@@ -1,15 +1,17 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: "book", sans-serif;
     box-sizing: border-box;
     background-color: #000;
     color: #fff;
 }
 
 h1 {
-    filter: drop-shadow(0px 0px 2px #ec2242);
-    font-weight: 600;
+    filter: drop-shadow(0px 0px 1px #ec2242);
+    font-family: "block", sans-serif;
     color: #ec2242;;
+    font-size: 30px
 }
 
 a {
@@ -24,6 +26,38 @@ a:hover {
     filter: drop-shadow(0px 0px 2px #ec2242);
 }
 
+/*FONTS*/
+@font-face {
+    font-family: "Light";
+    src: url("../fonts/AvenirLTStd-Light.otf");
+}
+
+@font-face {
+    font-family: "Book";
+    src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url("../fonts/AvenirLTStd-Medium.otf");
+}
+
+@font-face {
+    font-family: "Heavy";
+    src: url("../fonts/AvenirLTStd-Heavy.otf");
+}
+
+@font-face {
+    font-family: "Black";
+    src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
+@font-face {
+    font-family: "Block";
+    src: url("../fonts/Big-John.otf");
+}
+
+/*COLORS*/
 .background-white {
     background-color: #fff;
 }
@@ -34,7 +68,6 @@ a:hover {
 
 header {
     background-image: url('./../../images/header-image.jpg');
-    height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,14 +139,50 @@ section.grid-container.faqs {
 }
 
 @media screen and (max-width: 800px) {
+    header {
+        height: 60vh;
+    }
+
     header img {
         max-width: 280px;
     }
+
+    header img:nth-child(2) {
+        max-width: 300px;
+    }
 }
 
+@media screen and (max-width: 800px) {
+    header {
+        height: 60vh;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    header img:nth-child(2) {
+        max-width: 250px;
+    }
+
+    header img:nth-child(4) {
+        max-width: 65px
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .about--content {
+        width: 100%;
+    }
+
+    .accordion-title {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
 @media screen and (min-width: 800px) {
     header {
-        height: 50vh;
+        height: 60vh;
         padding-bottom: 75px;
     }
 
@@ -138,7 +207,7 @@ section.grid-container.faqs {
 }
 
 .accordion-content {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     border-bottom: 5px solid #000;
 }
 
@@ -159,6 +228,7 @@ section.grid-container.faqs {
     background-color: #fff;
     color: #181818;
     font-size: 20px;
+    font-family: "medium", sans-serif;
     border-bottom: 5px solid #000;
     padding: 15px 10px;
 }
