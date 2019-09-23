@@ -18,7 +18,6 @@ a {
     color: #ec2242;
     transition: filter 0.15s ease-in;
     font-weight: 600;
-    filter: saturate(70%);
 }
 
 a:hover {
